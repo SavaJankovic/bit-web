@@ -5,6 +5,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 header {
     background: #fff url(images/banner3.jpg) no-repeat center center;
     background-size: cover;
@@ -13,58 +18,65 @@ header {
     margin: 0 auto;
     margin-bottom: 20px;
 }
-header > h1{
+
+header>h1 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     padding-top: 30px;
-    color: #fff; 
+    color: #fff;
 }
-header > button {
-   margin: 5% 35%;
-   background:  rgb(40, 98, 223);
-   border: 2px solid rgb(40, 98, 223);
-   color: #fff;
-   padding: 5px;
-   width: 100px;
-   border-radius: 15px;
+
+header>button {
+    margin: 5% 35%;
+    background: rgb(40, 98, 223);
+    border: 2px solid rgb(40, 98, 223);
+    color: #fff;
+    padding: 5px;
+    width: 100px;
+    border-radius: 15px;
 }
 
 /* Nav bar */
 
-nav{
+nav {
     width: 95%;
     margin-bottom: 20px;
 }
-nav > h1{
+
+nav>h1 {
     text-align: center;
     color: gray;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
     margin-bottom: 10px;
 }
-nav > h1 > span {
+
+nav>h1>span {
     border: 5px solid gray;
     border-right: none;
     padding-left: 10px;
     color: orange;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
-nav > ul {
+
+nav>ul {
     text-align: center;
     color: #fff;
 }
-nav > ul > li {
-    background:  rgb(107, 201, 233);
+
+nav>ul>li {
+    background: rgb(107, 201, 233);
     padding: 5px;
     color: #fff;
-    
 }
-nav > ul > li > a{
+
+nav>ul>li>a {
     color: #fff;
     font-size: 12px;
     font-weight: 700;
@@ -72,31 +84,142 @@ nav > ul > li > a{
 
 /* Main */
 
-main{
-    width: 80%; 
+main {
+    width: 80%;
     margin: 0 auto;
 }
-section{
+
+section {
     margin-bottom: 20px;
 }
-main > h2{
-    text-align: center;
-    margin-bottom: 20px;
-}
-section > h3{
+
+section>h3 {
     color: rgb(107, 201, 233);
     margin-bottom: 20px;
 }
-section > ul > li {
+
+section>ul>li {
     padding: 5px;
-    padding-left:0;
-    font-size:13px;
+    padding-left: 0;
+    font-size: 13px;
     color: gray;
 }
-section > ul > li > a {
+
+section>ul>li>a {
     color: gray;
     font-weight: 700;
 }
-section > p {
+
+section>p {
     padding-bottom: 10px;
+}
+
+/* Article */
+
+article {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.box {
+    width: 100%;
+    background: rgb(107, 201, 233);
+    margin-bottom: 10px;
+}
+
+.box>img {
+    width: 20%;
+    border-radius: 50%;
+    margin: 20px;
+    float: left;
+    border: 2px solid white;
+}
+
+.box>h3 {
+    float: left;
+    clear: right;
+    margin: 30px;
+    margin-left: 0;
+    font-weight: bold;
+}
+
+.box>p {
+    color: white;
+    padding: 20px;
+    text-indent: initial;
+}
+
+/* Adress */
+
+address {
+    width: 100%;
+}
+
+.add {
+    color: white;
+    text-align: center;
+    min-height: 150px;
+}
+
+.gr {
+    background: rgb(57, 214, 162);
+    min-height: 150px;
+}
+
+.gr>p {
+    padding-bottom: 10px;
+}
+
+.add>h3 {
+    padding: 20px;
+}
+
+.pn {
+    background: pink;
+}
+
+.bl {
+    background: blue;
+}
+
+.lb {
+    background: lightcyan;
+}
+
+/* Maps */
+
+iframe {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.contact {
+    width: 100%;
+    margin: 0 auto;
+}
+
+input {
+    display: block;
+    width: 90%;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#submit {
+    width: 100px;
+    background: orange;
+    border: 2px solid orange;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 20px;
 }
