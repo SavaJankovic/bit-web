@@ -19,21 +19,24 @@ header {
     margin-bottom: 20px;
 }
 
+
 header>h1 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    padding-top: 30px;
+    padding-top: 100px;
     color: #fff;
+    font-size: 24px;
 }
 
 header>button {
-    margin: 5% 35%;
+    display: block;
     background: rgb(40, 98, 223);
     border: 2px solid rgb(40, 98, 223);
     color: #fff;
     padding: 5px;
     width: 100px;
     border-radius: 15px;
+    margin-top: 20px;
 }
 
 /* Nav bar */
@@ -41,6 +44,26 @@ header>button {
 nav {
     width: 95%;
     margin-bottom: 20px;
+}
+@media (min-width: 768px) { 
+ body {
+     position: relative;
+ }
+ nav>h1{
+     position: absolute;
+     top: 20px;
+     left: 20px;
+ }
+ nav > ul {
+     position: absolute;
+     top: 20px;
+     right: 10px;
+ }
+ nav > ul > li  {
+     display: inline;
+     background:none;
+ }
+
 }
 
 nav>h1 {
@@ -113,6 +136,17 @@ section>ul>li>a {
 section>p {
     padding-bottom: 10px;
 }
+@media (min-width: 768px){
+    section{
+        width: 50%;
+        float: left;
+    }
+    .section3{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+}
+
 
 /* Article */
 
@@ -126,29 +160,43 @@ article {
     width: 100%;
     background: rgb(107, 201, 233);
     margin-bottom: 10px;
+    position: relative;
+    min-height: 200px;
 }
-
-.box>img {
+.box > img{
     width: 20%;
     border-radius: 50%;
-    margin: 20px;
-    float: left;
     border: 2px solid white;
+    position: absolute;
+    left: 5%;
+    top: 10%;
 }
-
-.box>h3 {
-    float: left;
-    clear: right;
-    margin: 30px;
-    margin-left: 0;
-    font-weight: bold;
+.box > .star{
+    position: absolute;
+    top: 12%;
+    left: 30%;
+  
 }
-
-.box>p {
+.fa-star, .fa-star-half{
     color: white;
-    padding: 20px;
-    text-indent: initial;
 }
+.box > p{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: white;
+}
+
+@media (min-width: 768px){
+    article{
+        margin-bottom:500px; 
+    }
+    .box{
+        width: 45%;
+        float: left;
+        margin-right: 20px;
+    }
+ 
 
 /* Adress */
 
@@ -162,8 +210,21 @@ address {
     min-height: 150px;
 }
 
+@media (min-width: 768px){
+    .add{
+        float: left;
+        width: 50%;
+    }
+    .add > img{
+        height: 140px;
+    }
+    iframe{
+        height: 300px;
+    }
+}
+
 .gr {
-    background: rgb(57, 214, 162);
+    background: rgb(70, 199, 156);
     min-height: 150px;
 }
 
@@ -176,11 +237,15 @@ address {
 }
 
 .pn {
-    background: pink;
+    background: rgb(231, 63, 91);
+}
+.pn > a{
+    margin-right: 10px;
+    color: white;
 }
 
 .bl {
-    background: blue;
+    background: rgb(66, 66, 238);
 }
 
 .lb {
@@ -206,12 +271,24 @@ input {
     padding-left: 10px;
     margin-bottom: 20px;
 }
-
+@media (min-width: 768px){
+   
+    input{
+        width: 26%;
+       display: inline;
+       margin-left: 5%;
+       
+    }
+    .contact > #submit{
+        margin-left: 5%;
+    }
+}
 textarea {
     width: 90%;
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
+    padding: 10px;
 }
 
 #submit {
@@ -222,4 +299,33 @@ textarea {
     border-radius: 10px;
     text-align: center;
     margin-left: 20px;
+    margin-bottom: 30px;
 }
+footer{
+    background: black;
+    color: #fff;
+    min-height: 150px;
+    width: 100%;
+    font-size: 13px;
+}
+footer > ul {
+  padding: 50px 0 20px;
+  text-align: center;
+  width: 90%;
+}
+footer > ul > li {
+    display: inline;
+    text-align: center;
+    color: white;
+    margin-right: 5px;
+    
+}
+footer > ul > li> a{
+    color: #fff;
+    text-decoration: none;
+}
+footer > p{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
