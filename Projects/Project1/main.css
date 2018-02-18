@@ -18,7 +18,14 @@ header {
     margin: 0 auto;
     margin-bottom: 20px;
 }
-
+@media (min-width:1200px){
+   header{
+       min-height: 500px;
+   }
+   header > h1{
+    font-size: 40px;
+   }
+}
 
 header>h1 {
     text-align: center;
@@ -137,6 +144,7 @@ section>p {
     padding-bottom: 10px;
 }
 @media (min-width: 768px){
+
     section{
         width: 50%;
         float: left;
@@ -146,7 +154,21 @@ section>p {
         margin-bottom: 100px;
     }
 }
-
+@media (min-width:1200px){
+    section{
+        width: 27%;
+        float: left;
+        margin-left: 5%;
+    }
+    .section3{
+        width: 20%;
+        float: left;
+        clear: right;
+    }
+    main{
+        margin-bottom: 500px;
+    }
+}
 
 /* Article */
 
@@ -197,7 +219,15 @@ article {
         margin-right: 20px;
     }
  
-
+    @media (min-width:1200px){
+        .box{
+            width: 30%;
+            float: left;
+        }
+        article{
+            margin-bottom:300px; 
+        }
+    }
 /* Adress */
 
 address {
@@ -220,6 +250,12 @@ address {
     }
     iframe{
         height: 300px;
+    }
+}
+@media (min-width:1200px){
+    .add{
+        width: 25%;
+        float: left;
     }
 }
 
