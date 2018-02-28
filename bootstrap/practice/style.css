@@ -1,0 +1,17 @@
+div {
+    padding:2px;
+}
+.list-group {
+    width:85%;
+}
+ul.nav {
+    float:right;
+    padding-right:36px;
+
+}
+.blue {
+    background: blue;
+    width:100%;
+    color:white;
+    padding-left:10px;
+}
