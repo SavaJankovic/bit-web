@@ -1,0 +1,23 @@
+body {
+    min-height: 100vh; }
+  
+  #main-nav {
+    background-color: #333;
+    color: #fff; }
+  
+  h1 {
+    text-align: center; }
+  
+  footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff; }
+  
+  .col-show {
+    text-align: center;
+    margin-bottom: 20px; }
+  
+  .show-title {
+    padding: 15px 0 5px; }
+ 
