@@ -42,7 +42,6 @@ var ctrlModule = ((data, ui) => {
   
 
     $(document).on("click", ".singleShow", function () {
- 
       
 
     });

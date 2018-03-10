@@ -37,6 +37,10 @@ const dataModule = (() => {
         })
     };
 
+    const saveID = (id) => {
+        localStorage.setItem("showID", id);
+    };
+
 
 
 
@@ -44,7 +48,8 @@ const dataModule = (() => {
     return {
         showsAll,
         createShows,
-        searchShow
+        searchShow,
+        saveID
     }
 
 
