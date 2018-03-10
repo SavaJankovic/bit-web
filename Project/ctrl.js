@@ -26,19 +26,24 @@ var ctrlModule = ((data, ui) => {
     searchInput.on("keyup", event => {
         let searchVal = searchInput.val();
 
-        if (searchInput.val().length < 3) {
+        if (searchInput.val().length < 2) {
             return;
         }
-        
+
         let type = `${urlSearch}${searchVal}`;
 
-        let requestSearch = $.get(type).done(response => {
-            let list = data.searchShow(response);
-            ui.appendSearchList(list);
+        $.get(type)
+            .done(response => {
+                let list = data.searchShow(response);
+                ui.appendSearchList(list);
+            });
 
-        });
+    });
+  
 
-
+    $(document).on("click", ".singleShow", function () {
+ 
+      
 
     });
 

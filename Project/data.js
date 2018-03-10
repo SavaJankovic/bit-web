@@ -6,7 +6,7 @@ const dataModule = (() => {
     };
 
     class Show {
-        constructor(id, name, image) {
+        constructor(id, name, image = "") {
             this.id = id;
             this.name = name;
             this.image = image;
@@ -29,15 +29,12 @@ const dataModule = (() => {
 
 
     const searchShow = (showList) => {
-        let show10 = [];
-        showList.forEach(({ show }, index) => {
+        console.log(showList);
+        return showList.map(({ show }, index) => {
             if (index < 10) {
-                let nameShow = new Show(undefined, show.name, undefined);
-                show10.push(nameShow);
+                return new Show(show.id, show.name);
             }
         })
-
-        return show10;
     };
 
 
