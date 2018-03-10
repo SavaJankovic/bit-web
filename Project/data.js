@@ -23,8 +23,21 @@ const dataModule = (() => {
                 }
             }
         });
-        console.log(shows50);
+
         return shows50;
+    };
+
+
+    const searchShow = (showList) => {
+        let show10 = [];
+        showList.forEach(({ show }, index) => {
+            if (index < 10) {
+                let nameShow = new Show(undefined, show.name, undefined);
+                show10.push(nameShow);
+            }
+        })
+
+        return show10;
     };
 
 
@@ -33,7 +46,8 @@ const dataModule = (() => {
 
     return {
         showsAll,
-        createShows
+        createShows,
+        searchShow
     }
 
 

@@ -9,7 +9,6 @@ var ctrlModule = ((data, ui) => {
         });
 
         request.done(function (response) {
-            console.log(response);
 
             let list50 = data.createShows(response);
             ui.appendShows(list50);
@@ -19,20 +18,28 @@ var ctrlModule = ((data, ui) => {
             alert(`Your request failed!`)
         });
 
-    })
+    });
 
     const searchInput = $("input");
-    let searchVal = searchInput.val();
     let urlSearch = data.showsAll.urlSearch;
 
     searchInput.on("keyup", event => {
+        let searchVal = searchInput.val();
 
         if (searchInput.val().length < 3) {
             return;
         }
+        
+        let type = `${urlSearch}${searchVal}`;
 
-        console.log(`${}`)
-        // console.log(searchInput.val());
+        let requestSearch = $.get(type).done(response => {
+            let list = data.searchShow(response);
+            ui.appendSearchList(list);
+
+        });
+
+
+
     });
 
 

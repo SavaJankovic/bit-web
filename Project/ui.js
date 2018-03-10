@@ -11,7 +11,17 @@ const uiModule = (() => {
         });
     };
 
+    const appendSearchList = (listTen) => {
+        listTen.forEach(element => {
+            const movieName = element.name;
+            console.log(movieName);
+
+
+        });
+    };
+
     return {
-        appendShows
+        appendShows,
+        appendSearchList
     }
 })();
